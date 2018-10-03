@@ -21,4 +21,12 @@ public class SchoolBag {
         this.binder[0] = b1;
         this.binder[1] = b2;
     }
+    
+    public void addSheetsBinder(int ind, int amt){
+        binder[ind-1].addSheets(amt);
+    }
+    
+    public void removeSheetsBinder(int ind, int amt){
+        binder[ind-1].addSheets(-amt);
+    }
 }
